@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lampDetailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill"
+    android:fillViewport="true"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <TableLayout
+        android:id="@+id/lampDetailsFragmentTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_v"
+        android:paddingBottom="@dimen/margin_v"
+        android:stretchColumns="0" >
+
+        <TextView
+            android:id="@+id/lampDetailsFragmentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:text="@string/details"
+            android:textColor="@color/detail_text_dark"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_1" />
+
+        <include
+            android:id="@+id/lampDetailsFragmentDivider1"
+            layout="@layout/view_divider_row" />
+
+        <TableLayout
+            android:id="@+id/lampDetailsTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0" >
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelMake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_make"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextMake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider1"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_model"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider2"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_device"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider3"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelLamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_lamp"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextLamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider4"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelBase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_base"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextBase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider5"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelBeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_beam"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextBeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider6"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelDimmable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_dimmable"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextDimmable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider7"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelHasColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_has_color"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextHasColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider8"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelHasTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_has_temp"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextHasTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider9"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelHasEffects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_has_effects"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextHasEffects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider10"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelVoltageMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_voltage_min"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextVoltageMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider11"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelVoltageMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_voltage_max"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextVoltageMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider12"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelWattageActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_wattage_actual"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextWattageActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider13"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelWattageEquiv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_wattage_equiv"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextWattageEquiv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider14"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelLumens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_lumens"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextLumens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider15"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelTempMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_temp_min"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextTempMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider16"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampDetailsTableRow33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampDetailsLabelTempMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_details_temp_max"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampDetailsTextTempMax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/lampDetailsFragmentAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="20dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:textColor="@color/detail_text_dark"
+            android:textSize="@dimen/font_size_1" />
+
+        <include
+            android:id="@+id/lampDetailsFragmentDivider2"
+            layout="@layout/view_divider_row" />
+
+        <TableLayout
+            android:id="@+id/lampAboutTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0" >
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelDeviceID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_deviceid"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextDeviceID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider1"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelAppID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_appid"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextAppID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider2"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelDeviceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_device_name"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextDeviceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider3"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelDefaultLang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_default_language"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextDefaultLang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider4"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_app_name"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider5"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_description"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider6"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelManufacturer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_manufacturer"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextManufacturer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider7"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_model"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextModel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider8"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_date"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider9"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelSoftVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_soft_ver"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextSoftVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider10"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelHardVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_hard_ver"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextHardVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider11"
+                layout="@layout/view_divider_row" />
+
+            <TableRow
+                android:id="@+id/lampAboutTableRow12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="@dimen/margin_h"
+                    android:layout_marginRight="@dimen/margin_h"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lampAboutLabelSuppoerUrl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/lamp_about_support_url"
+                        android:textColor="@color/detail_text_dark"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_2" />
+
+                    <TextView
+                        android:id="@+id/lampAboutTextSuppoerUrl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/detail_text"
+                        android:textSize="@dimen/font_size_2" />
+                </LinearLayout>
+            </TableRow>
+
+            <include
+                android:id="@+id/lampDetailsDivider12"
+                layout="@layout/view_divider_row" />
+        </TableLayout>
+    </TableLayout>
+
+</ScrollView>

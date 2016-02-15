@@ -1,0 +1,98 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .externalToolBuilders/
+* .externalToolBuilders/Ant.launch
+* README.txt
+* build.xml
+* custom_rules.xml
+* links/
+* links/jar/
+* links/jar/AllJoyn/
+* links/jar/AllJoyn/.placeholder_jar_alljoyn.txt
+* links/jar/Base/
+* links/jar/Base/common/
+* links/jar/Base/common/.placeholder_jar_base_common.txt
+* links/jar/Base/config/
+* links/jar/Base/config/.placeholder_jar_base_config.txt
+* links/jar/Base/controlpanel/
+* links/jar/Base/controlpanel/.placeholder_jar_base_controlpanel.txt
+* links/jar/Base/notification/
+* links/jar/Base/notification/.placeholder_jar_base_notification.txt
+* links/jar/Base/onboarding/
+* links/jar/Base/onboarding/.placeholder_jar_base_onboarding.txt
+* links/jar/android/
+* links/jar/android/.placeholder_jar_android.txt
+* links/jar/lsf/
+* links/jar/lsf/.placeholder_jar_lsf.txt
+* links/jni/
+* links/jni/AllJoyn/
+* links/jni/AllJoyn/lib/
+* links/jni/AllJoyn/lib/armeabi/
+* links/jni/AllJoyn/lib/armeabi/.placeholder_jni_alljoyn.txt
+* links/jni/android/
+* links/jni/android/lib/
+* links/jni/android/lib/armeabi/
+* links/jni/android/lib/armeabi/.placeholder_jni_android.txt
+* links/jni/lsf/
+* links/jni/lsf/lib/
+* links/jni/lsf/lib/armeabi/
+* links/jni/lsf/lib/armeabi/.placeholder_jni_lsf.txt
+* links/sdk/
+* links/sdk/android/
+* links/sdk/android/.placeholder_sdk_android.txt
+* modules/
+* modules/null/
+* modules/null/.placeholder_modules_null.txt
+* modules/scenesv1/
+* modules/scenesv1/org/
+* modules/scenesv1/org/allseen/
+* modules/scenesv1/org/allseen/lsf/
+* modules/scenesv1/org/allseen/lsf/sampleapp/
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1EnterNameFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1InfoFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1Module.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1SelectEffectTypeFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1SelectMembersFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/BasicSceneV1Util.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/EffectV1InfoFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/NoEffectFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/PendingNoEffect.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/PendingPulseEffectV1.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/PendingTransitionEffectV1.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/PulseEffectV1Fragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/SceneElementV1PresetsFragment.java
+* modules/scenesv1/org/allseen/lsf/sampleapp/scenesv1/TransitionEffectV1Fragment.java
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src-module-scenesv1/ => app/src/main/java/
+* src-module-scenesv1/.placeholder_src_module_scenesv1.txt => app/src/main/resources/.placeholder_src_module_scenesv1.txt
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

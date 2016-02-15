@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:layout_marginBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/dialog_row_bg" >
+
+        <ImageButton
+            android:id="@+id/detailedItemButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/scene_set_icon" />
+
+        <TextView
+            android:id="@+id/detailedItemRowTextHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/detailedItemButtonMore"
+            android:layout_toRightOf="@+id/detailedItemButtonIcon"
+            android:scrollHorizontally="true"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/detail_text_dark"
+            android:textSize="@dimen/font_size_1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailedItemRowTextDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailedItemRowTextHeader"
+            android:layout_marginBottom="13dp"
+            android:layout_toLeftOf="@+id/detailedItemButtonMore"
+            android:layout_toRightOf="@+id/detailedItemButtonIcon"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_3" />
+
+        <ImageButton
+            android:id="@+id/detailedItemButtonMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/nav_more_menu_icon" />
+
+    </RelativeLayout>
+
+</TableRow>

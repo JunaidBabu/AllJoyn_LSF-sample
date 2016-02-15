@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_button_bg"
+    android:paddingBottom="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_h"
+        android:layout_marginRight="@dimen/margin_h"
+        android:background="@color/dialog_button_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/statusButtonPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" >
+
+            <TextView
+                android:id="@+id/statusLabelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/detail_text_dark"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_1" />
+
+            <TextView
+                android:id="@+id/statusTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statusLabelName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="your-name-here"
+                android:textColor="@color/detail_text"
+                android:textSize="@dimen/font_size_2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</TableRow>

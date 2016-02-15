@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_v"
+    android:paddingTop="@dimen/margin_v"
+    android:background="@color/dialog_button_bg"
+    android:stretchColumns="0" >
+
+    <TableRow
+        android:id="@+id/settingsTableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_button_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:background="@color/dialog_button_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/settingsLabelSampleApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/detail_text_dark"
+                android:textSize="@dimen/font_size_1"
+                android:background="@color/dialog_button_bg" />
+
+            <TextView
+                android:id="@+id/settingsTextSampleApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/detail_text"
+                android:textSize="@dimen/font_size_2"
+                android:background="@color/dialog_button_bg" />
+        </LinearLayout>
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDivider1"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowModuleScenesV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_button_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:background="@color/dialog_button_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/settingsLabelModuleScenesV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/module_scenes_v1"
+                android:textColor="@color/detail_text_dark"
+                android:textSize="@dimen/font_size_1"
+                android:background="@color/dialog_button_bg" />
+
+            <TextView
+                android:id="@+id/settingsTextModuleScenesV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/detail_text"
+                android:textSize="@dimen/font_size_2"
+                android:background="@color/dialog_button_bg" />
+        </LinearLayout>
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDividerModuleScenesV1"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowController"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/settingsLabelController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/controller"
+                android:textColor="@color/detail_text_dark"
+                android:textSize="@dimen/font_size_1" />
+
+            <TextView
+                android:id="@+id/settingsTextController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_2"
+                android:textColor="@color/detail_text" />
+        </LinearLayout>
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDividerController"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowBundledController"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/settingsLabelBundledController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/bundled_controller"
+                android:textColor="@color/detail_text_dark"
+                android:textSize="@dimen/font_size_1" />
+
+            <TextView
+                android:id="@+id/settingsTextBundledController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_2"
+                android:textColor="@color/detail_text" />
+
+            <CheckBox
+                android:id="@+id/settingsStartController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:text="@string/controller_enable_stopped"
+                android:textColor="@color/detail_text"
+                android:textSize="@dimen/font_size_2" />
+        </LinearLayout>
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDivider2"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/settingsLabelSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/source_code"
+            android:textColor="@color/detail_text_dark"
+            android:textSize="@dimen/font_size_1" />
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDivider3"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/settingsLabelTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/team"
+            android:textColor="@color/detail_text_dark"
+            android:textSize="@dimen/font_size_1" />
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDivider4"
+        layout="@layout/view_divider_row" />
+
+    <TableRow
+        android:id="@+id/settingsRowNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/settingsLabelNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/margin_h"
+            android:layout_marginRight="@dimen/margin_h"
+            android:layout_marginTop="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/notice"
+            android:textColor="@color/detail_text_dark"
+            android:textSize="@dimen/font_size_1" />
+    </TableRow>
+
+    <include
+        android:id="@+id/settingsDivider5"
+        layout="@layout/view_divider_row" />
+
+</TableLayout>

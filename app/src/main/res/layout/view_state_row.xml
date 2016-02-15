@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stateRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/stateMainLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/stateButton"
+            android:layout_toRightOf="@+id/stateRowColorIndicator"
+            android:paddingLeft="9dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/state_label_header_single"
+            android:textColor="@color/detail_text_dark"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_1" />
+
+        <Button
+            android:id="@id/stateButton"
+            android:layout_width="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@color/dialog_row_bg"
+            android:drawableRight="@drawable/arrow_details_down_icon"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="@string/title_presets_save_new"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_2" />
+
+        <RelativeLayout
+            android:id="@+id/startWithCurrentStateRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stateMainLabel"
+            android:layout_alignLeft="@id/stateMainLabel"
+            android:paddingTop="3dp"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/startWithCurrentStateTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:button="@drawable/checkbox" />
+
+            <TextView
+                android:id="@+id/startWithCurrentStateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/startWithCurrentStateTick"
+                android:layout_centerVertical="true"
+                android:textColor="@color/detail_text_dark"
+                android:textSize="@dimen/font_size_3"
+                android:text="@string/effect_pulse_start_with_current_properties" />
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/stateLabelBrightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startWithCurrentStateRow"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/brightness"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_2" />
+
+        <TextView
+            android:id="@+id/stateLabelBrightnessStar"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stateLabelBrightness"
+            android:gravity="right"
+            android:text="@string/star"
+            android:textSize="@dimen/font_size_2"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/stateControlBrightness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stateLabelBrightness"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/stateSliderBrightness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="4dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:progressDrawable="@drawable/slider_track"
+                android:thumb="@drawable/slider_thumb_normal"
+                android:thumbOffset="23dip" />
+
+            <TextView
+                android:id="@+id/stateTextBrightness"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:textSize="@dimen/font_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateLabelHue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateControlBrightness"
+            android:layout_marginLeft="20dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/hue"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_2" />
+
+        <TextView
+            android:id="@+id/stateLabelHueStar"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stateLabelHue"
+            android:gravity="right"
+            android:text="@string/star"
+            android:textSize="@dimen/font_size_2"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/stateControlHue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stateLabelHue"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/stateSliderHue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="4dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:progressDrawable="@drawable/slider_track"
+                android:thumb="@drawable/slider_thumb_normal"
+                android:thumbOffset="23dip" />
+
+            <TextView
+                android:id="@+id/stateTextHue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:textSize="@dimen/font_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateLabelSaturation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateControlHue"
+            android:layout_marginLeft="20dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/saturation"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_2" />
+
+        <TextView
+            android:id="@+id/stateLabelSaturationStar"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stateLabelSaturation"
+            android:gravity="right"
+            android:text="@string/star"
+            android:textSize="@dimen/font_size_2"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/stateControlSaturation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stateLabelSaturation"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/stateSliderSaturation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="4dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:progressDrawable="@drawable/slider_track"
+                android:thumb="@drawable/slider_thumb_normal"
+                android:thumbOffset="23dip" />
+
+            <TextView
+                android:id="@+id/stateTextSaturation"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:textSize="@dimen/font_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateLabelColorTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateControlSaturation"
+            android:layout_marginLeft="20dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/color_temperature"
+            android:textColor="@color/detail_text"
+            android:textSize="@dimen/font_size_2" />
+
+        <TextView
+            android:id="@+id/stateLabelColorTempStar"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stateLabelColorTemp"
+            android:gravity="right"
+            android:text="@string/star"
+            android:textSize="@dimen/font_size_2"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/stateControlColorTemp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stateLabelColorTemp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/stateSliderColorTemp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxHeight="4dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:progressDrawable="@drawable/slider_track"
+                android:thumb="@drawable/slider_thumb_normal"
+                android:thumbOffset="23dip" />
+
+            <TextView
+                android:id="@+id/stateTextColorTemp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/na"
+                android:textSize="@dimen/font_size_2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateTextNotSupportedByAll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateControlColorTemp"
+            android:gravity="center"
+            android:text="@string/not_supported_by_all"
+            android:textSize="@dimen/font_size_2"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <View
+            android:id="@id/stateRowColorIndicator"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/stateMainLabel"
+            android:background="@drawable/state_row_color_status"
+            android:color="@color/dialog_row_bg" />
+
+    </RelativeLayout>
+
+</TableRow>

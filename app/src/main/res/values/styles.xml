@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) AllSeen Alliance. All rights reserved.
+ *
+ *    Permission to use, copy, modify, and/or distribute this software for any
+ *    purpose with or without fee is hereby granted, provided that the above
+ *    copyright notice and this permission notice appear in all copies.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ *    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ *    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ *    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ *    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ *    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base theme -->
+    <style name="Theme.SampleApp.Base" parent="@android:style/Theme.Holo.Light" />
+
+    <!-- App common theme -->
+    <style name="Theme.SampleApp.Common" parent="Theme.SampleApp.Base">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabText</item>
+        <item name="android:actionMenuTextColor">@drawable/action_menu_text_color</item> 
+        <item name="android:actionBarTabStyle">@style/ActionBarTab</item>
+        <item name="android:actionBarTabBarStyle">@style/ActionBarTabBar</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:homeAsUpIndicator">@drawable/nav_back_icon</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/dialog_row_bg</item>
+    </style>
+
+    <!-- Title Text in ActionBar -->
+    <style name="TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionbar_text</item>
+        <item name="android:textSize">@dimen/font_size_1</item>
+    </style>
+
+    <!-- Tabs under ActionBar -->
+    <style name="ActionBarTab" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@color/dialog_button_bg</item>
+        <item name="android:divider">@color/dialog_button_bg</item>
+    </style>
+
+    <!--  Text in Tabs under ActionBar -->
+    <style name="ActionBarTabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+    <item name="android:background">@color/dialog_button_bg</item>
+    <item name="android:textColor">@drawable/tab_text_color</item>
+    </style>
+
+    <!-- Tab Bar Dividers -->
+    <style name="ActionBarTabBar" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+        <item name="android:showDividers">none</item>
+    </style>
+    
+    <!-- Overflow Button -->
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/nav_more_menu_icon</item>
+    </style>
+</resources>
